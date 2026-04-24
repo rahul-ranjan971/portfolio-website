@@ -833,7 +833,9 @@ function setupContactForm() {
     return;
   }
 
-  const fields = Array.from(selectors.contactForm.querySelectorAll("input, textarea"));
+  const fields = Array.from(
+    selectors.contactForm.querySelectorAll("input, textarea")
+  );
 
   fields.forEach((field) => {
     field.addEventListener("blur", () => validateField(field));
@@ -841,18 +843,15 @@ function setupContactForm() {
   });
 
   selectors.contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     const isFormValid = fields.every((field) => validateField(field));
 
     if (!isFormValid) {
-      selectors.contactFormFeedback.textContent = "Please complete the required fields before sending.";
+      selectors.contactFormFeedback.textContent =
+        "Please complete the required fields before sending.";
       return;
     }
 
-    selectors.contactFormFeedback.textContent =
-      "Frontend demo only: your message was validated successfully, but no backend submission is connected yet.";
-    selectors.contactForm.reset();
+    selectors.contactFormFeedback.textContent = "Sending message...";
   });
 }
 
