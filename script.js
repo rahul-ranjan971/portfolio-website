@@ -1,18 +1,18 @@
 
 const portfolioData = {
   name: "Rahul Ranjan",
-  title: "Frontend Developer | Future Full Stack Developer",
+  title: "Aspiring Full-Stack Developer | React.js",
   github: "https://github.com/rahul-ranjan971",
-  linkedin: "www.linkedin.com/in/rahul-ranjan-640945317",
+  linkedin: "https://www.linkedin.com/in/rahul-ranjan-640945317",
   whatsapp: "9718395963",
   phone: "9718395963",
   email: "rranjan.1212.7465@gmail.com",
   resume: "Rahul_Ranjan_Resume_Updated.pdf",
   location: "India",
-  heroEyebrow: "Available for frontend and full stack growth opportunities",
-  heroSummary: "I build responsive, clean and modern web experiences.",
+  heroEyebrow: "BCA Student | React Developer | Aspiring Full-Stack Developer",
+  heroSummary: "I build responsive React interfaces and am expanding my backend skills to create complete web applications.",
   about:
-    "I am Rahul Ranjan, passionate about web development and continuously improving my frontend and full stack skills. I enjoy building clean interfaces and real projects.",
+    "I am a BCA student with hands-on experience building responsive web interfaces using React, JavaScript and Tailwind CSS. I am now developing backend and database skills to grow into a full-stack developer.",
   trustStats: [
     {
       key: "projects-built",
@@ -24,7 +24,7 @@ const portfolioData = {
     },
     {
       key: "frontend",
-      value: "HTML, CSS, JavaScript"
+      value: "React, JavaScript, Tailwind CSS"
     },
     {
       key: "opportunities",
@@ -32,18 +32,18 @@ const portfolioData = {
     }
   ],
   skills: [
-    { title: "HTML", detail: "Semantic structure and accessible markup foundations." },
-    { title: "CSS", detail: "Responsive layouts, visual polish, and component styling systems." },
-    { title: "JavaScript", detail: "Interactive UI behavior and dynamic client-side functionality." },
-    { title: "Responsive Design", detail: "Layouts that adapt cleanly across mobile, tablet, laptop, and desktop." },
-    { title: "Git & GitHub", detail: "Version control, public project history, and portfolio-backed work." },
-    { title: "UI/UX Basics", detail: "Clean visual hierarchy, spacing, readability, and interaction thinking." },
-    { title: "Learning React", detail: "Expanding into component-driven application architecture." },
-    { title: "Learning Backend", detail: "Growing toward full stack capability with practical step-by-step progress." }
+    { title: "HTML5", detail: "Semantic page structure and accessible markup." },
+    { title: "CSS3", detail: "Responsive layouts, visual styling and cross-device presentation." },
+    { title: "JavaScript", detail: "ES6+ syntax and interactive client-side functionality." },
+    { title: "React.js", detail: "Reusable components and component-driven user interfaces." },
+    { title: "Tailwind CSS", detail: "Utility-first styling for consistent responsive interfaces." },
+    { title: "Vite", detail: "Modern frontend development and build tooling." },
+    { title: "Git & GitHub", detail: "Version control and public project collaboration workflows." },
+    { title: "Backend Development", detail: "Currently building backend and database fundamentals." }
   ],
   projectSettings: {
-    featuredRepos: ["admin-panel", "sheriyans-first-page"],
-    excludeRepos: ["portfolio-website", "animation-in-css", "project-sheryians-first-page"],
+    featuredRepos: ["udaan-foundation", "northpeak-digital", "admin-panel"],
+    excludeRepos: ["portfolio-website", "animation-in-css", "project-sheryians-first-page", "sheriyans-first-page"],
     maxProjects: 6,
     manualProjects: [],
     showManualProjects: false,
@@ -51,32 +51,39 @@ const portfolioData = {
     cacheTtlMs: 1000 * 60 * 60 * 6
   },
   projectLanguageHints: {
-    "admin-panel": ["HTML", "CSS"],
-    "sheriyans-first-page": ["HTML", "CSS"]
+    "udaan-foundation": ["React.js", "Tailwind CSS", "Vite"],
+    "northpeak-digital": ["React.js", "Tailwind CSS", "Vite"],
+    "admin-panel": ["HTML", "CSS", "JavaScript"]
   },
   fallbackProjects: [
     {
-      name: "admin-panel",
-      description:
-        "A polished admin dashboard interface focused on analytics, cards, tables, and premium dashboard styling for frontend showcase use.",
-      html_url: "https://github.com/rahul-ranjan971/admin-panel",
-      homepage: "https://rahul-ranjan971.github.io/admin-panel/",
+      name: "udaan-foundation",
+      description: "A responsive NGO website presenting the organisation's mission, causes, impact stories, gallery and donation-focused content, built with reusable React components and Tailwind CSS.",
+      html_url: "https://github.com/rahul-ranjan971/udaan-foundation",
+      homepage: "https://udaan-foundation.vercel.app",
       stargazers_count: 0,
-      updated_at: "2026-04-24T09:09:40Z",
-      language: "HTML",
-      languages: ["HTML", "CSS"],
+      language: "JavaScript",
+      languages: ["React.js", "Tailwind CSS", "Vite"],
       source: "fallback"
     },
     {
-      name: "sheriyans-first-page",
-      description:
-        "A bold landing page build inspired by Sheryians Coding School with premium hero composition, rich sections, and responsive presentation.",
-      html_url: "https://github.com/rahul-ranjan971/sheriyans-first-page",
-      homepage: "https://rahul-ranjan971.github.io/sheriyans-first-page/",
+      name: "northpeak-digital",
+      description: "A responsive digital agency website built with React, Tailwind CSS and Vite, featuring reusable interface components and structured agency sections.",
+      html_url: "https://github.com/rahul-ranjan971/northpeak-digital",
+      homepage: "",
       stargazers_count: 0,
-      updated_at: "2026-04-11T10:51:51Z",
+      language: "JavaScript",
+      languages: ["React.js", "Tailwind CSS", "Vite"],
+      source: "fallback"
+    },
+    {
+      name: "admin-panel",
+      description: "An administrative web interface built with HTML, CSS and JavaScript, focused on structured layouts, interactive elements and responsive presentation.",
+      html_url: "https://github.com/rahul-ranjan971/admin-panel",
+      homepage: "https://rahul-ranjan971.github.io/admin-panel/",
+      stargazers_count: 0,
       language: "HTML",
-      languages: ["HTML", "CSS"],
+      languages: ["HTML", "CSS", "JavaScript"],
       source: "fallback"
     }
   ],
@@ -87,7 +94,7 @@ const portfolioData = {
     },
     {
       label: "LinkedIn",
-      href: "Update Later"
+      href: "https://www.linkedin.com/in/rahul-ranjan-640945317"
     }
   ],
   typingPhrases: [
@@ -639,10 +646,23 @@ function setupInteractiveHoverTargets() {
 async function loadProjects() {
   renderProjectsLoadingState();
 
-  window.setTimeout(() => {
-    const curated = normalizeProjects(portfolioData.fallbackProjects);
-    renderProjects(curated, "Curated showcase loaded with verified GitHub and live demo links.");
-  }, 180);
+  try {
+    const repositories = await fetchCuratedRepos();
+    const curated = normalizeProjects(repositories);
+
+    if (!curated.length) {
+      throw new Error("No featured repositories were returned by GitHub.");
+    }
+
+    renderProjects(curated, "Featured projects loaded live from GitHub.");
+  } catch (error) {
+    const fallback = normalizeProjects(portfolioData.fallbackProjects);
+    renderProjects(
+      fallback,
+      "Showing curated project details because live GitHub data is temporarily unavailable.",
+      true
+    );
+  }
 }
 
 function renderProjectsLoadingState() {
