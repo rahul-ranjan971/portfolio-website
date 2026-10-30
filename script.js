@@ -175,7 +175,7 @@ window.addEventListener("load", () => {
 });
 
 function hydrateStaticContent() {
-  document.title = `${portfolioData.name} | Frontend Developer Portfolio for Recruiters`;
+  document.title = `${portfolioData.name} | Aspiring Full-Stack Developer`;
 
   if (selectors.heroEyebrow) {
     selectors.heroEyebrow.textContent = portfolioData.heroEyebrow;
